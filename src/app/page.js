@@ -6,7 +6,9 @@ import styles from "./page.module.css";
 import Head from "next/head";
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 
-mapboxgl.accessToken = 'pk.eyJ1Ijoic3NhbmR5MjQiLCJhIjoiY2x0YWJ5Y2oxMDZxejJpcGtoMHRmYjA0ZiJ9.dBWQjU5ZLnYd55fBM-bWiw';
+const token = process.env.MAPBOX_TOKEN;
+
+mapboxgl.accessToken = "pk.eyJ1Ijoic3NhbmR5MjQiLCJhIjoiY2x0YWJ5Y2oxMDZxejJpcGtoMHRmYjA0ZiJ9.dBWQjU5ZLnYd55fBM-bWiw";
 
 export default function Home() {
 
